@@ -197,7 +197,10 @@ public:
             do {
                 if (legalChar4Name(c)) {
                     name << c;
+<<<<<<< HEAD
                     //std::cout<<c;
+=======
+>>>>>>> 5b3fb9d2059febeb1453acbf1be6a5ebb0e0e9d1
                 } else {
                     pushBack(c);
                     break;

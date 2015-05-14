@@ -106,7 +106,10 @@ bool stream2tree(std::istream &is, TREE &tree, idx2name &names, WEIGHTS &weights
         //std::cout<<"!";
         if (c == ';') {
             lin = UINT_MAX;
+<<<<<<< HEAD
             //std::cout<<"PS: "<<parents.size();
+=======
+>>>>>>> 5b3fb9d2059febeb1453acbf1be6a5ebb0e0e9d1
             if (!parents.empty()) ERROR_return/*ERROR_exit*/("problem in the tree expression " << input.getLastPos());
             break;
         } else
@@ -148,10 +151,16 @@ bool stream2tree(std::istream &is, TREE &tree, idx2name &names, WEIGHTS &weights
             input.pushBack(c);
             std::string name = input.getName();
             //std::cout<<" "<<name;
+<<<<<<< HEAD
             if (name.empty()) ERROR_return("problem in the tree expression " << input.getLastPos());
             
             names.insert(idx2name::value_type(lin, name));
 
+=======
+            if (name.empty()) ERROR_return("problem in the tree expression " << input.getLastPos());            
+            
+            names.insert(idx2name::value_type(lin, name));
+>>>>>>> 5b3fb9d2059febeb1453acbf1be6a5ebb0e0e9d1
         }
         if (!input.nextAnyChar(c)) return false;
     }

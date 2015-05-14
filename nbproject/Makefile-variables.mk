@@ -22,6 +22,7 @@ CND_ARTIFACT_PATH_Release=dist/Release/MinGW-Windows/assesssupertree
 CND_PACKAGE_DIR_Release=dist/Release/MinGW-Windows/package
 CND_PACKAGE_NAME_Release=assesssupertree.tar
 CND_PACKAGE_PATH_Release=dist/Release/MinGW-Windows/package/assesssupertree.tar
+<<<<<<< HEAD
 #
 # include compiler specific variables
 #
@@ -33,3 +34,5 @@ ROOT:sh = test -f nbproject/private/Makefile-variables.mk || \
 .PHONY: $(shell test -f nbproject/private/Makefile-variables.mk || (mkdir -p nbproject/private && touch nbproject/private/Makefile-variables.mk))
 #
 include nbproject/private/Makefile-variables.mk
+=======
+>>>>>>> 5b3fb9d2059febeb1453acbf1be6a5ebb0e0e9d1

@@ -37,13 +37,21 @@ ALLCONFS=Debug Release
 # build
 .build-impl: .build-pre .validate-impl .depcheck-impl
 	@#echo "=> Running $@... Configuration=$(CONF)"
+<<<<<<< HEAD
 	"${MAKE}" -f nbproject/Makefile-${CONF}.mk QMAKE=${QMAKE} SUBPROJECTS=${SUBPROJECTS} .build-conf
+=======
+	${MAKE} -f nbproject/Makefile-${CONF}.mk SUBPROJECTS=${SUBPROJECTS} .build-conf
+>>>>>>> 5b3fb9d2059febeb1453acbf1be6a5ebb0e0e9d1
 
 
 # clean
 .clean-impl: .clean-pre .validate-impl .depcheck-impl
 	@#echo "=> Running $@... Configuration=$(CONF)"
+<<<<<<< HEAD
 	"${MAKE}" -f nbproject/Makefile-${CONF}.mk QMAKE=${QMAKE} SUBPROJECTS=${SUBPROJECTS} .clean-conf
+=======
+	${MAKE} -f nbproject/Makefile-${CONF}.mk SUBPROJECTS=${SUBPROJECTS} .clean-conf
+>>>>>>> 5b3fb9d2059febeb1453acbf1be6a5ebb0e0e9d1
 
 
 # clobber 
@@ -51,7 +59,11 @@ ALLCONFS=Debug Release
 	@#echo "=> Running $@..."
 	for CONF in ${ALLCONFS}; \
 	do \
+<<<<<<< HEAD
 	    "${MAKE}" -f nbproject/Makefile-$${CONF}.mk QMAKE=${QMAKE} SUBPROJECTS=${SUBPROJECTS} .clean-conf; \
+=======
+	    ${MAKE} -f nbproject/Makefile-$${CONF}.mk SUBPROJECTS=${SUBPROJECTS} .clean-conf; \
+>>>>>>> 5b3fb9d2059febeb1453acbf1be6a5ebb0e0e9d1
 	done
 
 # all 
@@ -59,6 +71,7 @@ ALLCONFS=Debug Release
 	@#echo "=> Running $@..."
 	for CONF in ${ALLCONFS}; \
 	do \
+<<<<<<< HEAD
 	    "${MAKE}" -f nbproject/Makefile-$${CONF}.mk QMAKE=${QMAKE} SUBPROJECTS=${SUBPROJECTS} .build-conf; \
 	done
 
@@ -72,6 +85,11 @@ ALLCONFS=Debug Release
 	@#echo "=> Running $@... Configuration=$(CONF)"
 	"${MAKE}" -f nbproject/Makefile-${CONF}.mk SUBPROJECTS=${SUBPROJECTS} .test-conf
 
+=======
+	    ${MAKE} -f nbproject/Makefile-$${CONF}.mk SUBPROJECTS=${SUBPROJECTS} .build-conf; \
+	done
+
+>>>>>>> 5b3fb9d2059febeb1453acbf1be6a5ebb0e0e9d1
 # dependency checking support
 .depcheck-impl:
 	@echo "# This code depends on make tool being used" >.dep.inc
